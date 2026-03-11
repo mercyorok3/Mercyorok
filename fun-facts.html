@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Fun Facts</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #fact { margin: 20px; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <div id="fact">
+        <h1>Random Fun Facts</h1>
+        <p>Did you know?</p>
+        <p>Here you can see random fun facts displayed!</p>
+    </div>
+    <script>
+        const facts = [
+            "Honey never spoils.",
+            "A group of flamingos is called a 'flamboyance'.",
+            "Bananas are berries, but strawberries aren’t.",
+            "Octopuses have three hearts.",
+            "The Eiffel Tower can be 15 cm taller during the summer.",
+        ];
+        document.getElementById('fact').innerHTML += '<p>' + facts[Math.floor(Math.random() * facts.length)] + '</p>';
+    </script>
+</body>
+</html>
